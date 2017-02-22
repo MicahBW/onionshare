@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="{FB9A4305-A067-42F5-B552-3BEC85D0BD56}" Language="1033"
+      Manufacturer="Micah Lee" Name="OnionShare"
+      UpgradeCode="{3466951C-2E3D-4CD3-8BCF-619B1780E57B}"
+      Version="1.0.0.0">
+    <Package Compressed="yes" InstallerVersion="200" />
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLDIR" Name="OnionShare" />
+      </Directory>
+    </Directory>
+    <Feature Id="ProductFeature" Level="1" Title="OnionShare">
+      <ComponentGroupRef Id="OnionShare" />
+    </Feature>
+    <Media Id="1" Cabinet="product.cab" EmbedCab="yes" />
+  </Product>
+  <Fragment>
+    <ComponentGroup Id="OnionShare">
+      <Component Id="cmpBDFF5EC2DF8DE79E878B7E3B470C463F" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{D806297F-320E-4593-9BA5-B034B7E78C30}">
+        <File Id="filF0A4DBE1C021328949245D30797295E1" KeyPath="yes" Source="SourceDir\onionshare.exe" />
+      </Component>
+      <Component Id="cmp6DDFE2066C50427BEF3D55D729A23D1F" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{3E7D8095-1A11-4EEC-8A62-25142438E8A3}">
+        <File Id="filC6E95025091241D86878CD2BA2FE771D" KeyPath="yes" Source="SourceDir\api-ms-win-core-console-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmpA7B02A82927213FBCD27C1D863E0F870" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{B8DE19B3-B6FF-4BEF-9F2E-24453467063C}">
+        <File Id="fil4AAE38A3E80EFB4D70F4FF86B80C4C0C" KeyPath="yes" Source="SourceDir\api-ms-win-core-datetime-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmpD8268054DD68B095D3B08B36DB6A0919" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{DA4D298B-5472-4BCE-A209-E7D4B0D12D28}">
+        <File Id="filBBA93F61D2ED0310A53222A9F52B9D05" KeyPath="yes" Source="SourceDir\api-ms-win-core-debug-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmpC052A7728ADA618CDC0DDE55F70A1779" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{BC2836FB-CD35-454E-B720-64E98FCF40BF}">
+        <File Id="filD7A0370B027036C025560E0CD383DE94" KeyPath="yes" Source="SourceDir\api-ms-win-core-errorhandling-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmpC7899CF052526AA7F2CA2A7DF7AA0A5D" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{1398F3FA-3CFC-45E6-BED2-E2C2F1F63888}">
+        <File Id="fil00F965C1EA1FCAA0834AEF989D8C5BA5" KeyPath="yes" Source="SourceDir\api-ms-win-core-file-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmpCB51D8CE435E2522358C35882CEF0956" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{D8B14413-B4E3-435A-B28A-AB77BF2692B8}">
+        <File Id="fil721BAA4E9B69345EA12FC4D7CE69BB78" KeyPath="yes" Source="SourceDir\api-ms-win-core-file-l1-2-0.dll" />
+      </Component>
+      <Component Id="cmpEF7E656D384483159CD35BB4CCA150A7" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{7AC060DD-2E7E-4792-A136-5AC652523C38}">
+        <File Id="fil9AEB10F769A1A77534221E55077761E0" KeyPath="yes" Source="SourceDir\api-ms-win-core-file-l2-1-0.dll" />
+      </Component>
+      <Component Id="cmp3C6C3104045F964C6B82F1087C35FF38" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{211301FF-84F9-4A5C-8E9C-5D403CC919FA}">
+        <File Id="filC736AC9D3D9308C8A0AAF8EDA357B32D" KeyPath="yes" Source="SourceDir\api-ms-win-core-handle-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp14873D558C61E2CFE2574BBE072928F9" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{840AD9A6-58FB-4343-9E6C-729F05BB6FB2}">
+        <File Id="fil26326DD3B8496BDE90589C35EE1BEC73" KeyPath="yes" Source="SourceDir\api-ms-win-core-heap-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp58B592458ECDAEE837D8BF097B3F56A1" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{927A574B-8E28-42A8-A7DD-6541250AE10F}">
+        <File Id="fil23657FD5EC5D85D0F17A92143CEB4C66" KeyPath="yes" Source="SourceDir\api-ms-win-core-interlocked-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp45C4E04B003BCE4448D201FB657059C1" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{D1A568D5-1579-4C24-B2ED-4AC3AE80045D}">
+        <File Id="filB6D8FF46DAF3DA691020E07D8ED6A36A" KeyPath="yes" Source="SourceDir\api-ms-win-core-libraryloader-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp211D8E79B85C4AE2AE802CA6EC325D81" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{F1CFAA18-B9DD-45F7-8CC0-21444164BCD8}">
+        <File Id="filCF5FD003995ABF7BDA76BC7E135E580D" KeyPath="yes" Source="SourceDir\api-ms-win-core-localization-l1-2-0.dll" />
+      </Component>
+      <Component Id="cmp40D3C163ACEF2F59607E39D5F2861ADE" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{D2A2ECC9-FC89-401C-8405-2F7E3DFDDE83}">
+        <File Id="fil8AA7B626FEFF46CB5CB4C9C5E8D72940" KeyPath="yes" Source="SourceDir\api-ms-win-core-memory-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp6A16BF0F956F92A5BE0DD2609E58678D" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{88D7EC6D-7381-4C67-8C0A-BC67E0B9C028}">
+        <File Id="fil31D335B0C0BBC48DAC4AEE07AEC79C7C" KeyPath="yes" Source="SourceDir\api-ms-win-core-namedpipe-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmpA2444B880870AAF9F8AD77B481885EB5" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{F59A6616-55F6-4F6D-86E8-9982C1A808E9}">
+        <File Id="fil8B40242FDFC45A1E76423FC94F2EF363" KeyPath="yes" Source="SourceDir\api-ms-win-core-processenvironment-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp0500B9A0254A3F4C08ACB3EF4B71949F" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{71245495-0D35-4411-8A14-85C752281327}">
+        <File Id="filA0157388AB89C27FEEFAA94995098708" KeyPath="yes" Source="SourceDir\api-ms-win-core-processthreads-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp9D840B31EB179DC6035EF6709380D3EF" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{63D45CFD-D853-404A-8C64-F5F8257465F3}">
+        <File Id="filE90E88006BCF6A301616D0B22D07112E" KeyPath="yes" Source="SourceDir\api-ms-win-core-processthreads-l1-1-1.dll" />
+      </Component>
+      <Component Id="cmp5A9062198AC0DDF4226D2D171476B7DE" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{623482F2-4F6F-4C9F-ABF4-82BF16B81058}">
+        <File Id="fil8AFA7E55701A2B09B14B628C730CF1DA" KeyPath="yes" Source="SourceDir\api-ms-win-core-profile-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp9DAE2FAE08B4F448296AE157B483EE4E" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{529B919D-DE6D-4E7E-B63A-92D9C9D6718B}">
+        <File Id="filB229F0ED3B80F0AB4E1D2DEAC7E3F4D7" KeyPath="yes" Source="SourceDir\api-ms-win-core-rtlsupport-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp51C37CF68096F127767CB754811E0E66" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{DD13A131-6900-47A8-8CD6-F752F22BE06A}">
+        <File Id="filA9F5761319EAEA9695F05B0A5E0D57F8" KeyPath="yes" Source="SourceDir\api-ms-win-core-string-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmpEF446300AB54275DB952FC3EB8745329" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{C5205AB2-7553-4AF1-AC6E-FD550B15E614}">
+        <File Id="fil44722E7AFA768858B7B3B2A1430E8413" KeyPath="yes" Source="SourceDir\api-ms-win-core-synch-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmpB864D03859B5039CD5D242334636A43B" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{695B584A-7E9B-4509-80D6-EBB3235119B7}">
+        <File Id="fil85BACA2367F0D8A81CA2BC8657C14A0F" KeyPath="yes" Source="SourceDir\api-ms-win-core-synch-l1-2-0.dll" />
+      </Component>
+      <Component Id="cmpC0CC1CD06919CCB46A150F850FDE5470" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{7B4C26C4-39E2-4693-8E8C-B5F11DE4CA46}">
+        <File Id="fil6F4E2F560FD5B3ECB0CCABD8A28115A0" KeyPath="yes" Source="SourceDir\api-ms-win-core-sysinfo-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp58AAB5A3D284193E19FE39E345D8D66C" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{02DA14C6-D4DA-490B-BB34-B65CBBDE3414}">
+        <File Id="filF1CCA03E3819F6E64BFEC984FBCDCD46" KeyPath="yes" Source="SourceDir\api-ms-win-core-timezone-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp95BF155FE9FEA0062EC4179A3E467ECD" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{B5E734D4-BFD6-4681-B81F-0DCAC0EBACE8}">
+        <File Id="fil541D3A37D044D791D9A63DDAF534BF6D" KeyPath="yes" Source="SourceDir\api-ms-win-core-util-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmpB104450233BC8129757CF986861C07D2" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{EDA42AB2-43DC-4B2C-8588-3A6A58F1D82C}">
+        <File Id="filF5561F320114D3642F874F8B041C2D0A" KeyPath="yes" Source="SourceDir\api-ms-win-crt-conio-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp44339B5017A6938D1DBC64514619A1B6" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{B8D96309-855A-44BD-BAD6-6A77772C9F8C}">
+        <File Id="filB02F39CA87457A82B4F49FF0893412DF" KeyPath="yes" Source="SourceDir\api-ms-win-crt-convert-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp7814F00835244F53C0D7E1F2A242222A" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{F822A79C-0063-4D64-A9A1-7FF2F758948E}">
+        <File Id="filC10A76048D9D45731527B7F1D2F62D84" KeyPath="yes" Source="SourceDir\api-ms-win-crt-environment-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp756ABB1DC29E89753D1A4FDF4788786D" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{A6A6287D-AC3D-4F5B-A19B-F650CE3580AD}">
+        <File Id="fil3EA476924AB8EB4EC5CAD025121C0255" KeyPath="yes" Source="SourceDir\api-ms-win-crt-filesystem-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmpC97FD71E14B844D8AA3D66B58D8001B7" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{8D9B5B73-202A-4D4B-94A4-4BBD140C7577}">
+        <File Id="fil2D95E81CE4B061CC22DDBE340F59783F" KeyPath="yes" Source="SourceDir\api-ms-win-crt-heap-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp78EAEC49C2AA7102C51F85E058EC9F20" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{397E651D-18E7-4BEF-9A2C-5EBC65F383E0}">
+        <File Id="filF2658550EB9E61569FDDD4772FE9BE36" KeyPath="yes" Source="SourceDir\api-ms-win-crt-locale-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp52AC5310B19BA3B6CBFAB31EECC86371" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{5ED24BFA-89C1-42E7-8D46-721EBFC19BD8}">
+        <File Id="fil2FCFE229FF906721450CFC778034AC49" KeyPath="yes" Source="SourceDir\api-ms-win-crt-math-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp362AECB64E8D274ED2793D5DC99C00FD" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{BAF17101-5491-4607-AE4C-4B1584454999}">
+        <File Id="fil4D3B2715FADAADBC644CB6F622E7D5E4" KeyPath="yes" Source="SourceDir\api-ms-win-crt-multibyte-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp163650E0F36CE3E257A56A7B877DE3AE" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{C2BAABFE-32F3-4572-8907-C8342CEBD247}">
+        <File Id="filD18EAF3DEE97D7A652947C911DE32598" KeyPath="yes" Source="SourceDir\api-ms-win-crt-process-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp01A7B6740E1E1BEA1944B4FA1B158E56" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{A7D24D3B-56DA-4573-AB6F-78686F4AFF86}">
+        <File Id="filAAF8C08816825B7368072E49B19DCB0E" KeyPath="yes" Source="SourceDir\api-ms-win-crt-runtime-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp24F120759C7E740A8981D2208E1DCF7A" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{A182F377-5396-4FF7-90E7-411A2700A82F}">
+        <File Id="fil4DC95426C9DCF9F33780A89D06288D98" KeyPath="yes" Source="SourceDir\api-ms-win-crt-stdio-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp0B39A52B4B2134FE03233E2FD30B88BE" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{C3D2A55D-3F75-4D74-B490-CB10332FAECB}">
+        <File Id="fil4C5693C9E0E699D07B6C02FF5DD0E5D3" KeyPath="yes" Source="SourceDir\api-ms-win-crt-string-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp5290E7A8C53F2FE393D72E13D2760CC5" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{B2FF3940-EAFE-4C46-9127-9351FC098C3D}">
+        <File Id="fil4F271B1C1C133147A7D491067703FB23" KeyPath="yes" Source="SourceDir\api-ms-win-crt-time-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmp65C23B142778F6ADA19BA46E9C5151BA" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{46564679-1EC1-42F1-B03D-934FAC066F2D}">
+        <File Id="fil4C8B572DC297D14EF911BE9C088B7D54" KeyPath="yes" Source="SourceDir\api-ms-win-crt-utility-l1-1-0.dll" />
+      </Component>
+      <Component Id="cmpCF5E930EA2AE602A41B25C9271A264CC" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{D5B74AA7-D2F6-47D4-8480-76F7CDC02F00}">
+        <File Id="fil78068855DB72162E045D368F91E0BF30" KeyPath="yes" Source="SourceDir\base_library.zip" />
+      </Component>
+      <Component Id="cmpDEFD9D5E233887EB6CF44268E3E400C8" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{F2B366CF-064F-476E-9A16-1B3DA535B884}">
+        <File Id="fil4DD71677F7B1C69722BF23E04AD52DFA" KeyPath="yes" Source="SourceDir\MSVCP140.dll" />
+      </Component>
+      <Component Id="cmp3CD273D705A696B3B202C692CD81E00D" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{37D31B2C-9513-4634-A2D5-90BE8AE91D02}">
+        <File Id="filCDFE43D9E0E917171DD8B15D2841DFEB" KeyPath="yes" Source="SourceDir\MSVCR100.dll" />
+      </Component>
+      <Component Id="cmpB87A0F68CBA863AB03805C86B7044030" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{C8F280BB-648D-4BF7-A2AA-293BF176ACAC}">
+        <File Id="fil68B695D09FE3C5A6326CE4CBD12727B7" KeyPath="yes" Source="SourceDir\onionshare.exe.manifest" />
+      </Component>
+      <Component Id="cmp3B49F80FBCCF2BAD977874F180F63F20" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{DA197699-8195-46F4-B155-EF34F4DB558A}">
+        <File Id="fil4A2426E91E3C29324211A0EDFD1B16DF" KeyPath="yes" Source="SourceDir\pyexpat.pyd" />
+      </Component>
+      <Component Id="cmp8B7BC51DF523C554C521D991A939D5E5" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{1FA3EA7C-2CE3-4D09-9303-0592CF7AF6D3}">
+        <File Id="fil7C157ED4FC11B976FC055E0EDA078CC4" KeyPath="yes" Source="SourceDir\PyQt5.Qt.pyd" />
+      </Component>
+      <Component Id="cmp59FF7B3AE7106AE0C613D789FD8D20FB" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{E612182E-7FCB-4426-AF93-93EF70AC4824}">
+        <File Id="filBE68EF397C31AD1D726C3A1D5EE744B0" KeyPath="yes" Source="SourceDir\PyQt5.QtCore.pyd" />
+      </Component>
+      <Component Id="cmp4A2D62449EFECAAB4B4A90B98F757734" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{826BA9FD-425D-4784-B90E-DE5F5490ECE9}">
+        <File Id="fil63A3B831F2B0975BC72AA068DA754900" KeyPath="yes" Source="SourceDir\PyQt5.QtGui.pyd" />
+      </Component>
+      <Component Id="cmpF71899999C224987FE9382F821B9DFA6" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{FCEE7063-2E94-4668-858C-611CC4B4B7FF}">
+        <File Id="filA52C8FAC4961FA12F0D797D5F5F72DB1" KeyPath="yes" Source="SourceDir\PyQt5.QtPrintSupport.pyd" />
+      </Component>
+      <Component Id="cmpD63CA0E3026E01E9F442A6D2AF27F9F1" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{DE76B5D3-4B14-4A51-978B-0A4D6101F1A5}">
+        <File Id="fil5957ECB8B6FEA403784D2414E79FAF27" KeyPath="yes" Source="SourceDir\PyQt5.QtWidgets.pyd" />
+      </Component>
+      <Component Id="cmp456E4F9C6B6F4BA3C4E77AE989EC5EEC" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{0D53AE2D-A8CB-4586-B665-9156F1CE158A}">
+        <File Id="filA5167DDD39B3E5BF651260CB3B9EFC97" KeyPath="yes" Source="SourceDir\python3.dll" />
+      </Component>
+      <Component Id="cmp4F9C41278F8FE568A04A5236B192B775" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{C1DDFA97-12F1-4C2D-AAF8-6F13034E3738}">
+        <File Id="fil205AACB9F52471982FC716A4CCA27F3C" KeyPath="yes" Source="SourceDir\python35.dll" />
+      </Component>
+      <Component Id="cmpFD998A4D71EC026F52FEA62EF39C86BD" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{60A4F5E4-A302-4199-9D58-C1039AB93F0B}">
+        <File Id="filA077D39F13157550A1782264E923C31D" KeyPath="yes" Source="SourceDir\pywintypes35.dll" />
+      </Component>
+      <Component Id="cmp88C7FFAF97C3E76D79C2862FE8D1E0F2" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{3E76248E-C946-428A-B4EF-FD0ED5AA4370}">
+        <File Id="fil20DDCC15C23BE41332271D931090122F" KeyPath="yes" Source="SourceDir\Qt5Core.dll" />
+      </Component>
+      <Component Id="cmpD9F26E09270326C444EBBB749DD2D77F" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{01F236DB-3461-4B0C-8364-30C947B94C0D}">
+        <File Id="filE55489412E30B2EF4CEDEE7825F8BF27" KeyPath="yes" Source="SourceDir\Qt5Gui.dll" />
+      </Component>
+      <Component Id="cmpDBB54E9F42DFE86D04449EB7041CC5F6" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{3288FF2C-622E-475A-9EC6-7A2E096F15BF}">
+        <File Id="fil427946EDC4EF18C9A5F9C298159D45A8" KeyPath="yes" Source="SourceDir\Qt5PrintSupport.dll" />
+      </Component>
+      <Component Id="cmpBFE358708D35528DF666F1959D063FFF" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{53E7553C-EBE1-485A-8CD1-5D39BA0E5218}">
+        <File Id="fil9D5C08D5D2F0D05C0C65896A1E9F2497" KeyPath="yes" Source="SourceDir\Qt5Svg.dll" />
+      </Component>
+      <Component Id="cmp56E5729A23E5C7B93F802DBE89F8F5E1" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{10F9B622-FCF0-4525-BCDE-F71CC8AC4431}">
+        <File Id="filDA97D9000802E2CE9B8288B2CD3B90EA" KeyPath="yes" Source="SourceDir\Qt5Widgets.dll" />
+      </Component>
+      <Component Id="cmp2393E9DBF83CF37C6A9638F62F2143D0" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{03E362E9-A7D2-4830-989B-25F6D2255142}">
+        <File Id="fil173258C1ADBE832C363920F561BF8CAE" KeyPath="yes" Source="SourceDir\select.pyd" />
+      </Component>
+      <Component Id="cmp5FD5FA7508931BC66420DC35886B7B38" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{F00B8C1B-F26E-459C-85DD-897987C86DCD}">
+        <File Id="filE9A2141ADF27D42125A1130218A07243" KeyPath="yes" Source="SourceDir\sip.pyd" />
+      </Component>
+      <Component Id="cmp2E1569714F8CF7D3E6C406CB8ECD8B37" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{ACB65E32-31FA-4183-A496-FDB7DA1175CC}">
+        <File Id="fil69809901B5DD60043AD9926AC7269630" KeyPath="yes" Source="SourceDir\ucrtbase.dll" />
+      </Component>
+      <Component Id="cmp94C6DCDBE27D62BF89815264AEE52104" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{F493425A-5210-4AAB-8F8E-602AA1658359}">
+        <File Id="fil6CF2579F349156DAFA58F07813E4B211" KeyPath="yes" Source="SourceDir\unicodedata.pyd" />
+      </Component>
+      <Component Id="cmp3B395DA55BCB6F837535677B6E48C858" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{87869A00-CAA5-4761-8695-69A5283DB7C6}">
+        <File Id="fil5FCF7D063FC1928674102F85B8C0DBE4" KeyPath="yes" Source="SourceDir\VCRUNTIME140.dll" />
+      </Component>
+      <Component Id="cmp4558D4346E07B6032A3B9296D2EA6303" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{5B5D0543-FFD7-4812-AB37-20F72A7874C7}">
+        <File Id="filCC9CE3A6211DE37709A564ABACE18A27" KeyPath="yes" Source="SourceDir\win32wnet.pyd" />
+      </Component>
+      <Component Id="cmp66CE7E16786C238B2B809001F096A4C7" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{47EBDE08-C986-4375-AD96-D5B15056AB92}">
+        <File Id="fil43113A22E00EFD2C48993ABED02EB73A" KeyPath="yes" Source="SourceDir\_bz2.pyd" />
+      </Component>
+      <Component Id="cmpC1C8309A45F0297F81797A6BD10C85D9" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{D3448CBA-A2CC-4DBB-B42E-B7E76A335A3E}">
+        <File Id="fil13B013C001D2E748BA2C84C8C8108950" KeyPath="yes" Source="SourceDir\_ctypes.pyd" />
+      </Component>
+      <Component Id="cmp023E755523CAF91FDCAB38B7EB27B108" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{4E633309-6B66-4938-B48C-B255F7919471}">
+        <File Id="filD7CBB7F6BE3139ECB0DC566401A59C08" KeyPath="yes" Source="SourceDir\_decimal.pyd" />
+      </Component>
+      <Component Id="cmp71D12112201796E834501F9C15EC6F6B" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{9A1182F1-C56C-42F3-8A9D-7106BBC35D4A}">
+        <File Id="filC84CA3FDEFC36353E065A7BD39F7224F" KeyPath="yes" Source="SourceDir\_hashlib.pyd" />
+      </Component>
+      <Component Id="cmp0CC75AEAB8D2F6F5BDD7C8BA9127327F" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{F21698FE-C703-4557-AF82-5B860F09C2DB}">
+        <File Id="filA39A2F3E120A05377D443831BB6A8BA1" KeyPath="yes" Source="SourceDir\_lzma.pyd" />
+      </Component>
+      <Component Id="cmp4FB7DBAFFD1FEADC113FFFBB779B1339" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{9D392373-CD4F-4150-9E44-E5080261DEC4}">
+        <File Id="fil47516C8B0DA6E6D22CED5142E82E0A3F" KeyPath="yes" Source="SourceDir\_multiprocessing.pyd" />
+      </Component>
+      <Component Id="cmpB1A0672331159E536C4624476FA4AC00" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{61680A13-C277-433E-9EB3-E51A8287F00E}">
+        <File Id="fil88C43C00C2D7242E76546862B10113C5" KeyPath="yes" Source="SourceDir\_socket.pyd" />
+      </Component>
+      <Component Id="cmp7BF98BC6D6383D8CA7F346CFBC9FFBE5" Directory="dir991BE9825279EC67C4BC2DA8CB951111" Guid="{23D0826A-7DC2-489C-8000-E44F20180CF5}">
+        <File Id="fil5B746C92DCC685D594CA00BC91E3E5AF" KeyPath="yes" Source="SourceDir\_ssl.pyd" />
+      </Component>
+      <Component Id="cmpB71B37D076B50395879B5B6CC43E7308" Directory="dir3A4D600AF245E1FE58D7A5B5538A785D" Guid="{00286A79-8F4A-49D3-91A5-92AE1570F81B}">
+        <File Id="fil72AA5A6A92EC599883238F6E0E7A131C" KeyPath="yes" Source="SourceDir\Include\pyconfig.h" />
+      </Component>
+      <Component Id="cmp4B43B69651D9F955BC9BE97E44BD365D" Directory="dir88D102BCCD7F525776ED035A1A8BA775" Guid="{3321AA4A-40C0-4797-A28F-2DA52356AE98}">
+        <File Id="fil9A95B4E1F2816DFA3ECFDC890D50423E" KeyPath="yes" Source="SourceDir\lib2to3\Grammar.txt" />
+      </Component>
+      <Component Id="cmp0BF35D2298F1AE2AF35409A019861E84" Directory="dir88D102BCCD7F525776ED035A1A8BA775" Guid="{88A4453E-93D0-434E-B5C1-A0ADFBD37839}">
+        <File Id="filB2C89CB88D6BECEC6B02968B3B4B7340" KeyPath="yes" Source="SourceDir\lib2to3\Grammar3.5.2.final.0.pickle" />
+      </Component>
+      <Component Id="cmp670EB2484BA2063880ADB4A985A664F2" Directory="dir88D102BCCD7F525776ED035A1A8BA775" Guid="{D6DC013E-A306-48B9-AED3-64EA41D3DE13}">
+        <File Id="fil988850D3D3BCDBBE5C8FB75ACBB6452E" KeyPath="yes" Source="SourceDir\lib2to3\PatternGrammar.txt" />
+      </Component>
+      <Component Id="cmpBF15BE7F7FE776665687DA8D773215E0" Directory="dir88D102BCCD7F525776ED035A1A8BA775" Guid="{0A82A0C2-2118-4E60-A5D7-781887A465B4}">
+        <File Id="fil40F18D98D57FADB0B888910160802B9E" KeyPath="yes" Source="SourceDir\lib2to3\PatternGrammar3.5.2.final.0.pickle" />
+      </Component>
+      <Component Id="cmp6BF8F6B775ED8ADC21165799DA546725" Directory="dir9F91E9DA28FFC72D6115F5B02D5B7790" Guid="{F38F9190-BF4F-48B5-BBFD-22172E6A4006}">
+        <File Id="fil98F0FAE518BBED130F7A70AFCB210E69" KeyPath="yes" Source="SourceDir\lib2to3\tests\data\README" />
+      </Component>
+      <Component Id="cmp24E269ADDF6DFBA8DBE01F81F767CE88" Directory="dir84E5D34216DC38CEA7B6D782769DB253" Guid="{30AA5E29-DB6D-45E0-9D87-E3F45390A684}">
+        <File Id="fil4B093EACC85F7973C4BBDD4C63D65CA7" KeyPath="yes" Source="SourceDir\qt5_plugins\iconengines\qsvgicon.dll" />
+      </Component>
+      <Component Id="cmp99C742F9BB33E3C9390412B31F19BD70" Directory="dir41F471D340929819E63C3E1D7C571649" Guid="{7923835D-270B-4DB1-ADD4-9DDA034A707E}">
+        <File Id="fil593C0869651C8D3F79BB63D4B7B18A35" KeyPath="yes" Source="SourceDir\qt5_plugins\imageformats\qgif.dll" />
+      </Component>
+      <Component Id="cmp8049DB24508F87634BA23E2601C38831" Directory="dir41F471D340929819E63C3E1D7C571649" Guid="{252C60AC-91FD-4DD6-B561-5B559A97B9D6}">
+        <File Id="filFB58131D3F09851FCDA0640BBEB1E935" KeyPath="yes" Source="SourceDir\qt5_plugins\imageformats\qicns.dll" />
+      </Component>
+      <Component Id="cmpC3E44E1F134BA0D915058CF86A39F6ED" Directory="dir41F471D340929819E63C3E1D7C571649" Guid="{9024765D-B330-4DF0-BD9C-0732438E3DFE}">
+        <File Id="filEA3E168344077C186098B1110062BB70" KeyPath="yes" Source="SourceDir\qt5_plugins\imageformats\qico.dll" />
+      </Component>
+      <Component Id="cmpF5995254EA3A65154677E884C73C64CB" Directory="dir41F471D340929819E63C3E1D7C571649" Guid="{5EFCEB5A-B8A6-4EEE-A945-38B1CAB10B7D}">
+        <File Id="fil178884FA71EC359F7586C89EADE215BB" KeyPath="yes" Source="SourceDir\qt5_plugins\imageformats\qjpeg.dll" />
+      </Component>
+      <Component Id="cmpF69815B0F38C1727F01EB76D710C608D" Directory="dir41F471D340929819E63C3E1D7C571649" Guid="{D1EA67CD-752B-439C-BFF5-B82E82213730}">
+        <File Id="fil2DFC95E9020BBF2B9179B99C005B2AD1" KeyPath="yes" Source="SourceDir\qt5_plugins\imageformats\qsvg.dll" />
+      </Component>
+      <Component Id="cmp999C17D6519C0C8582598DEC2F69A77F" Directory="dir41F471D340929819E63C3E1D7C571649" Guid="{32945BEB-16AE-4166-B673-47702F400991}">
+        <File Id="fil0CA3D36F2DE3B9BE798AB74633FB2DEC" KeyPath="yes" Source="SourceDir\qt5_plugins\imageformats\qtga.dll" />
+      </Component>
+      <Component Id="cmpC70542048B88E93C8CA477FD61622C4F" Directory="dir41F471D340929819E63C3E1D7C571649" Guid="{934620C4-47C9-45B6-8B51-74A702F6B041}">
+        <File Id="fil321C2D3A211FF232DE9F539BEB92AEB6" KeyPath="yes" Source="SourceDir\qt5_plugins\imageformats\qtiff.dll" />
+      </Component>
+      <Component Id="cmp85E30A4C0486D4B98CB6AC7DB8831434" Directory="dir41F471D340929819E63C3E1D7C571649" Guid="{CC05E9C9-55FA-4C5C-A968-9C1CBB1811A6}">
+        <File Id="fil02DFE8BB5B3F16244DCBE332EB241967" KeyPath="yes" Source="SourceDir\qt5_plugins\imageformats\qwbmp.dll" />
+      </Component>
+      <Component Id="cmp40E1BE0BE2F9C5602A363121F13E4148" Directory="dir41F471D340929819E63C3E1D7C571649" Guid="{4B049E9E-F994-4541-862C-3F4E1527C350}">
+        <File Id="fil13D72BAD096DB888B344FB9488F8FF3B" KeyPath="yes" Source="SourceDir\qt5_plugins\imageformats\qwebp.dll" />
+      </Component>
+      <Component Id="cmp664226F839199B38222B54B7284C0C3C" Directory="dir125B25EF087BBB69EA1AE7B772B611FA" Guid="{42450B19-B068-4786-96B7-1A70564188AB}">
+        <File Id="fil8B5D9C3C9F66CC34687E2ABB8401AF37" KeyPath="yes" Source="SourceDir\qt5_plugins\platforms\qminimal.dll" />
+      </Component>
+      <Component Id="cmp9E56E1FFE82C21D3FC9B1D776F50041B" Directory="dir125B25EF087BBB69EA1AE7B772B611FA" Guid="{E3753F6F-D8C3-4221-8673-3D20D87E233D}">
+        <File Id="filDB7AF08EADDDC207914850BDF1413090" KeyPath="yes" Source="SourceDir\qt5_plugins\platforms\qoffscreen.dll" />
+      </Component>
+      <Component Id="cmp99C04DFCAB6F0BA478F2E687CC9C1C47" Directory="dir125B25EF087BBB69EA1AE7B772B611FA" Guid="{4C9D00C5-5D1C-431D-825C-065219DCA13F}">
+        <File Id="filFCA19EEFD203E743777F4DCBE7CD9863" KeyPath="yes" Source="SourceDir\qt5_plugins\platforms\qwindows.dll" />
+      </Component>
+      <Component Id="cmpDAE3D373F1846D42C4D7D3BEF59436FF" Directory="dir60D15CE6506148EB5A8777F6CF993078" Guid="{025697CF-D82C-480F-8AB1-77C878B937DF}">
+        <File Id="filBB48758C7ABA711CB4853614D12C14EE" KeyPath="yes" Source="SourceDir\qt5_plugins\printsupport\windowsprintersupport.dll" />
+      </Component>
+      <Component Id="cmp02A58DFCB179BE15AADE557ED448D58B" Directory="dirCCA3520BAA935BDD6660741122B67590" Guid="{A409A9BF-CFF6-4EE3-829B-9ADBB7B40633}">
+        <File Id="filA93E3172ED22A388FE649BE3BFA21794" KeyPath="yes" Source="SourceDir\share\license.txt" />
+      </Component>
+      <Component Id="cmp7EC02E3286545B51D94409C62E55D846" Directory="dirCCA3520BAA935BDD6660741122B67590" Guid="{2AEBD8A8-5227-4050-AAB1-AF8B17F3BB3F}">
+        <File Id="fil342601C891DFC234F5BD154751AF372C" KeyPath="yes" Source="SourceDir\share\version.txt" />
+      </Component>
+      <Component Id="cmpBAC9BA6FD381813935A3920D294A27B4" Directory="dirCCA3520BAA935BDD6660741122B67590" Guid="{21BB849E-012F-4087-8194-E0AE971207C3}">
+        <File Id="fil283136F8471B6C4A5C9DFA381726DF84" KeyPath="yes" Source="SourceDir\share\wordlist.txt" />
+      </Component>
+      <Component Id="cmp863B2E9D6AAE9D80A468D1BDBF7C230D" Directory="dirD521F9891368E5DDBC3571F5A04F2054" Guid="{A5CC4E1A-2FD7-4E64-952F-821A6299E2A8}">
+        <File Id="fil1B04FCF12F33F7E34E74DC851333EE7C" KeyPath="yes" Source="SourceDir\share\html\404.html" />
+      </Component>
+      <Component Id="cmpD3C96DBEFE726B6D7A2C1F06182C734B" Directory="dirD521F9891368E5DDBC3571F5A04F2054" Guid="{2B6C3B0C-3864-485D-AFEA-E5EF62E12817}">
+        <File Id="filC406AE956F2188AF8BC7AB533C25D789" KeyPath="yes" Source="SourceDir\share\html\denied.html" />
+      </Component>
+      <Component Id="cmpE93F8FB6AEA178D80DFAF4FB28717B8E" Directory="dirD521F9891368E5DDBC3571F5A04F2054" Guid="{9DFEC83F-05DA-4DCD-AB80-417A86564AD0}">
+        <File Id="fil1803752DB65698DAFF7F00F0C46101DE" KeyPath="yes" Source="SourceDir\share\html\index.html" />
+      </Component>
+      <Component Id="cmp0ED303E84DF56103C103A71D1F92DC5F" Directory="dir6A2B56B1AE406797C0A3A4399488E774" Guid="{8CC26194-387C-42C7-B2C0-37957A8080E8}">
+        <File Id="fil281444B55B156B6FFB920E0A7A084AF4" KeyPath="yes" Source="SourceDir\share\images\drop_files.png" />
+      </Component>
+      <Component Id="cmp9B478B5046DCEAB3607B1CE8083D15F2" Directory="dir6A2B56B1AE406797C0A3A4399488E774" Guid="{56823DF5-AF45-45C1-AC72-C252F08EA56B}">
+        <File Id="fil8D043F6EE14DF9033B4ACAE9DF1D6641" KeyPath="yes" Source="SourceDir\share\images\logo.png" />
+      </Component>
+      <Component Id="cmp53ED28BAFD79B3E4FA22E1FD934F8277" Directory="dir6A2B56B1AE406797C0A3A4399488E774" Guid="{493AD270-8092-445B-9976-18C19E69E029}">
+        <File Id="fil34E23BACC84598845BFF6AE802C37564" KeyPath="yes" Source="SourceDir\share\images\server_started.png" />
+      </Component>
+      <Component Id="cmp5E5E2681C6150BEC8B8BC0218DFB4A6D" Directory="dir6A2B56B1AE406797C0A3A4399488E774" Guid="{8BFBEEA7-8F5D-4563-B432-6083CCB5C38F}">
+        <File Id="fil04A78CABAFA6CABE7763EFAA9EB9BC05" KeyPath="yes" Source="SourceDir\share\images\server_stopped.png" />
+      </Component>
+      <Component Id="cmpC5E21E1736926D24F1D1AB4458018053" Directory="dir6A2B56B1AE406797C0A3A4399488E774" Guid="{8AC30959-AC16-4B92-9FC3-DE56E429171C}">
+        <File Id="filE55238944F9BFB1FA0C12CACB9D094B1" KeyPath="yes" Source="SourceDir\share\images\server_working.png" />
+      </Component>
+      <Component Id="cmpE68804B2473A62A92A1D5B2C938C7752" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{31D0C221-1D91-488C-8AE9-57DD2DF62F48}">
+        <File Id="filA62C4F9850DA4343AFD3F7E5E5620FD8" KeyPath="yes" Source="SourceDir\share\locale\cs.json" />
+      </Component>
+      <Component Id="cmp7528D1C0BBF15F356545DCBA2F80C112" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{9831F4BD-D5E3-485B-AC28-79A1E09A3665}">
+        <File Id="fil82EF6B0933C181C31FA92A207653237E" KeyPath="yes" Source="SourceDir\share\locale\de.json" />
+      </Component>
+      <Component Id="cmp0DBAAADB88D9C2764FFB31D5776F523D" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{5733193D-48F1-46F2-B3B4-887DDEC5AAD6}">
+        <File Id="filC4CA910EB8A2ED328AAF35D882A2BBAF" KeyPath="yes" Source="SourceDir\share\locale\en.json" />
+      </Component>
+      <Component Id="cmp61C7647704857F6154F3B8407E0E5B72" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{EAAE2718-84D0-4853-802F-338E3D3BA6BD}">
+        <File Id="fil18DD5867324494FD55204DA139C0BF64" KeyPath="yes" Source="SourceDir\share\locale\eo.json" />
+      </Component>
+      <Component Id="cmp9753AD264E2A8094B43BADFCF1FEBC5E" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{C06C0C91-BA94-4FB1-A702-2BD9F02D3066}">
+        <File Id="fil5B988E9CBA7473F3584BE21865FCF729" KeyPath="yes" Source="SourceDir\share\locale\es.json" />
+      </Component>
+      <Component Id="cmpC7A31E7081FA1951DC75E22AD10FBC85" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{797935B7-6ADA-45D0-BDFE-3FD06A8FCA19}">
+        <File Id="fil007A4AF0DD227641304080B24FDF37A7" KeyPath="yes" Source="SourceDir\share\locale\fi.json" />
+      </Component>
+      <Component Id="cmp01B17A8E67819C6633A6DA941580DD2A" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{78CE7D66-EDE0-4747-BB70-B71B1EF65C48}">
+        <File Id="filC9452679A1EE2E17ABF866C4740F0E5C" KeyPath="yes" Source="SourceDir\share\locale\fr.json" />
+      </Component>
+      <Component Id="cmp1055AB0D204991C9402F28E46FC1C41E" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{C0C4B4D4-B25E-4879-B2EE-69BBA25678C9}">
+        <File Id="fil5523E59772058B0599D4F077CD713F45" KeyPath="yes" Source="SourceDir\share\locale\it.json" />
+      </Component>
+      <Component Id="cmpEEE0F71A4FBDF102DA191B758B942F62" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{6E37F462-B001-4B1C-9B00-2D23D79C4403}">
+        <File Id="fil2480D839298774D7DD58DF96F38AE0EE" KeyPath="yes" Source="SourceDir\share\locale\nl.json" />
+      </Component>
+      <Component Id="cmp4A084EA5EE7C28A6117AF8D3840C3704" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{9D8B5F11-5217-411D-852C-C280836E5D1F}">
+        <File Id="fil78B8D07F9B3876175BFDF4C53A456B28" KeyPath="yes" Source="SourceDir\share\locale\no.json" />
+      </Component>
+      <Component Id="cmp1DC01351B275D10F567C4CA92FFD55CF" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{E67E5D2A-497B-4470-8A6C-7D89EC265595}">
+        <File Id="fil74063986CE1096CEACE200B18139B176" KeyPath="yes" Source="SourceDir\share\locale\pt.json" />
+      </Component>
+      <Component Id="cmp0321065B28F87E479809F36ACBD81A65" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{980C4F0F-DEC9-465C-84FE-60CA32B60249}">
+        <File Id="filCCA286B4D539526D656ACAD8E940AF4D" KeyPath="yes" Source="SourceDir\share\locale\ru.json" />
+      </Component>
+      <Component Id="cmp98459143C4334BD56817B539C59742F2" Directory="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Guid="{C58FDF1F-7FFB-421A-A525-117470A2F282}">
+        <File Id="filD1011AF9C6A7D0CB9C547143F7288893" KeyPath="yes" Source="SourceDir\share\locale\tr.json" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir1F112E6D4BC5C303B11BCF0409C1FD69">
+      <Directory Id="dir125B25EF087BBB69EA1AE7B772B611FA" Name="platforms" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir991BE9825279EC67C4BC2DA8CB951111">
+      <Directory Id="dir1F112E6D4BC5C303B11BCF0409C1FD69" Name="qt5_plugins" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dirCCA3520BAA935BDD6660741122B67590">
+      <Directory Id="dir21C1CCBEBC2BEBCFD16C3F9C86B79240" Name="locale" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir991BE9825279EC67C4BC2DA8CB951111">
+      <Directory Id="dir3A4D600AF245E1FE58D7A5B5538A785D" Name="Include" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir1F112E6D4BC5C303B11BCF0409C1FD69">
+      <Directory Id="dir41F471D340929819E63C3E1D7C571649" Name="imageformats" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir1F112E6D4BC5C303B11BCF0409C1FD69">
+      <Directory Id="dir60D15CE6506148EB5A8777F6CF993078" Name="printsupport" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dirCCA3520BAA935BDD6660741122B67590">
+      <Directory Id="dir6A2B56B1AE406797C0A3A4399488E774" Name="images" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir1F112E6D4BC5C303B11BCF0409C1FD69">
+      <Directory Id="dir84E5D34216DC38CEA7B6D782769DB253" Name="iconengines" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir991BE9825279EC67C4BC2DA8CB951111">
+      <Directory Id="dir88D102BCCD7F525776ED035A1A8BA775" Name="lib2to3" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="TARGETDIR">
+      <Directory Id="dir991BE9825279EC67C4BC2DA8CB951111" Name="onionshare" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dirC6058CC301F8C7E090E82F88D77D8B99">
+      <Directory Id="dir9F91E9DA28FFC72D6115F5B02D5B7790" Name="data" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir88D102BCCD7F525776ED035A1A8BA775">
+      <Directory Id="dirC6058CC301F8C7E090E82F88D77D8B99" Name="tests" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dir991BE9825279EC67C4BC2DA8CB951111">
+      <Directory Id="dirCCA3520BAA935BDD6660741122B67590" Name="share" />
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <DirectoryRef Id="dirCCA3520BAA935BDD6660741122B67590">
+      <Directory Id="dirD521F9891368E5DDBC3571F5A04F2054" Name="html" />
+    </DirectoryRef>
+  </Fragment>
+</Wix>

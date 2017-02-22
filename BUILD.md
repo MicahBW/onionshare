@@ -102,8 +102,8 @@ Download and install the standalone [Windows 10 SDK](https://dev.windows.com/en-
 
 If you want to build the installer:
 
-* Go to http://nsis.sourceforge.net/Download and download the latest NSIS. I downloaded `nsis-3.0-setup.exe`.
-* Add `C:\Program Files (x86)\NSIS` to the path.
+* Download and install (Wix Toolset)[http://wixtoolset.org/releases/]. I downloaded version 3.10.3, `wix310.exe`.
+* Add `C:\Program Files (x86)\WiX Toolset v3.10\bin` to the path.
 
 If you want to sign binaries with Authenticode:
 
@@ -114,7 +114,7 @@ If you want to sign binaries with Authenticode:
 
 For PyInstaller to work, you might need to edit `Scripts\pyinstaller-script.py` in your Python 3.5 folder, to work around [this bug](https://stackoverflow.com/questions/31808180/installing-pyinstaller-via-pip-leads-to-failed-to-create-process) in pip.
 
-* Open a command prompt, cd into the onionshare directory, and type: `pyinstaller install\pyinstaller.spec`. `onionshare.exe`, `onionshare-gui.exe`, and all of their supporting files will get created inside the `build` folder.
+* Open a command prompt, cd into the onionshare directory, and type: `pyinstaller install\pyinstaller.spec`. `onionshare.exe` and all of their supporting files will get created inside the `dist\onionshare` folder.
 
 ### To build the installer:
 

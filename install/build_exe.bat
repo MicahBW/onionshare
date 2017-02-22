@@ -1,13 +1,14 @@
-REM build onionshare.exe, onionshare-gui.exe
+REM build onionshare.exe
 pyinstaller install\pyinstaller.spec -y
 
-REM sign onionshare.exe, onionshare-gui.exe
-signtool.exe sign /v /d "OnionShare" /a /tr http://timestamp.globalsign.com/scripts/timstamp.dll /fd sha256 build\exe.win32-3.5\onionshare.exe
-signtool.exe sign /v /d "OnionShare" /a /tr http://timestamp.globalsign.com/scripts/timstamp.dll /fd sha256 build\exe.win32-3.5\onionshare-gui.exe
+REM sign onionshare.exe
+REM signtool.exe sign /v /d "OnionShare" /a /tr http://timestamp.globalsign.com/scripts/timstamp.dll /fd sha256 build\exe.win32-3.5\onionshare.exe
 
 REM build an installer, dist\OnionShare_Setup.exe
-mkdir dist
-makensis.exe install\onionshare.nsi
+cd build
+candle.exe -out OnionShare.wixobj ..\install\OnionShare.wxs
+light.exe -b ..\dist\onionshare -out ..\dist\OnionShare.msi OnionShare.wixobj
+cd ..
 
-REM sign OnionShare_Setup.exe
-signtool.exe sign /v /d "OnionShare" /a /tr http://timestamp.globalsign.com/scripts/timstamp.dll /fd sha256 dist\OnionShare_Setup.exe
+REM sign OnionShare.msi
+REM signtool.exe sign /v /d "OnionShare" /a /tr http://timestamp.globalsign.com/scripts/timstamp.dll /fd sha256 dist\OnionShare.msi
